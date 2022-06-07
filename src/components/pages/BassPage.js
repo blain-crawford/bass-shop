@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
-function ShoppingPage() {
+function BassPage() {
   return (
     <div>
       <Header />
-      <h1>Hello, Shopping Page!</h1>
+      <h1>Hello, Bass Page!</h1>
       <IndividualProductLinks />
     </div>
   );
 }
 
-export default ShoppingPage;
+export default BassPage;

@@ -1,8 +1,7 @@
 const bassPedals = [
   {
     id: '56042680',
-    title:
-      'Electro-Harmonix Black Russian Big Muff Pi Sovtek',
+    title: 'Electro-Harmonix Black Russian Big Muff Pi Sovtek',
     condition: 'Mint',
     pricing: {
       display: '$750',
@@ -55,8 +54,7 @@ const bassPedals = [
   },
   {
     id: '55987931',
-    title:
-      'MXR BASS ENVELOPE FILTER M82',
+    title: 'MXR BASS ENVELOPE FILTER M82',
     condition: 'Excellent',
     pricing: {
       display: '$110',

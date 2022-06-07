@@ -1,8 +1,7 @@
 const bassAmps = [
   {
     id: '55132747',
-    title:
-      'GrBass One 800',
+    title: 'GrBass One 800',
     condition: 'Very Good',
     pricing: {
       display: '$559.92',
@@ -58,8 +57,7 @@ const bassAmps = [
   },
   {
     id: '50211428',
-    title:
-      'Mesa Boogie Big Block 750 Bass Amplifier (San Diego, CA)',
+    title: 'Mesa Boogie Big Block 750 Bass Amplifier (San Diego, CA)',
     condition: 'Very Good',
     pricing: {
       display: '$799.99',
@@ -101,7 +99,8 @@ const bassAmps = [
   },
   {
     id: '55466781',
-    title: 'Fender Musicmaster Bass 2-Channel 12-Watt 1x12 Bass Combo 1970 - 1980',
+    title:
+      'Fender Musicmaster Bass 2-Channel 12-Watt 1x12 Bass Combo 1970 - 1980',
     condition: 'Very Good',
     pricing: {
       display: '$675',

@@ -5,10 +5,10 @@ function IndividualProductLinks() {
   return (
     <div>
       <ul>
-        <Link to="/all-products">All products</Link>
-        <Link to="/basses">Basses</Link>
-        <Link to="/amps">Amps</Link>
-        <Link to="/pedals">Pedals</Link>
+        <Link to='/all-products'>All products</Link>
+        <Link to='/basses'>Basses</Link>
+        <Link to='/amps'>Amps</Link>
+        <Link to='/pedals'>Pedals</Link>
       </ul>
     </div>
   );

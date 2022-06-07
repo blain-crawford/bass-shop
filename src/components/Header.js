@@ -5,9 +5,9 @@ function Header() {
   return (
     <div>
       <ul>
-        <Link to="/">Home</Link>
-        <Link to="/all-products">Products</Link>
-        <Link to="/cart">Shopping Cart</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/all-products'>Products</Link>
+        <Link to='/cart'>Shopping Cart</Link>
       </ul>
     </div>
   );

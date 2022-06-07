@@ -97,17 +97,15 @@ const bassPedals = [
     ],
   },
   {
-    id: '55989473',
-    title: 'Music man Joe Dart II #33',
+    id: '56072730',
+    title: 'Tech 21 Sansamp Programmable Bass Driver',
     condition: 'Mint',
     pricing: {
-      display: '$3500',
+      display: '$160',
       currency: 'USD',
     },
     images: [
-      'https://images.reverb.com/image/upload/s--7Vf63vGb--/t_card-square/v1654289497/uis3hhapciu8jgfw5qm7.jpg',
-      'https://images.reverb.com/image/upload/s--bJCEjrRc--/t_card-square/v1654289492/qct07f275e8dc9ovy3r4.jpg',
-      'https://images.reverb.com/image/upload/s--L79HAaWW--/t_card-square/v1654289492/dkfnsy2jlf7vq90sytf8.jpg',
+      'https://images.reverb.com/image/upload/s--a1IGJGIK--/t_card-square/v1654533757/rtzvve0ll0wvtzjelexb.jpg',
     ],
   },
   {
@@ -166,17 +164,17 @@ const bassPedals = [
     ],
   },
   {
-    id: '56089465',
-    title: 'Alembic Spoiler Cocobolo 7 String Bass',
+    id: '56075074',
+    title: 'Boss GEB-7 Bass Equalizer',
     condition: 'Excellent',
     pricing: {
-      display: '$5799.99',
+      display: '$89',
       currency: 'USD',
     },
     images: [
-      'https://images.reverb.com/image/upload/s--t_XfPJAU--/t_card-square/v1654571386/h3meeubsw2chb2olysld.jpg',
-      'https://images.reverb.com/image/upload/s--KvW5qymN--/t_card-square/v1654571394/ctmnxjdeyzvin3lbs4xo.jpg',
-      'https://images.reverb.com/image/upload/s--43WdHUqp--/t_card-square/v1654571402/x1es8iwk87aoiw6k0cer.jpg',
+      'https://images.reverb.com/image/upload/s--987HuFpe--/t_card-square/v1654538305/wgrnwr1ztktko9akfw2r.jpg',
+      'https://images.reverb.com/image/upload/s--0Oat9QR---/t_card-square/v1654538306/xblgn2bvxg3h2fmkrrjo.jpg',
+      'https://images.reverb.com/image/upload/s--oo9bA98q--/t_card-square/v1654538306/tvw9g6zir7ckvcowrihh.jpg',
     ],
   },
   {

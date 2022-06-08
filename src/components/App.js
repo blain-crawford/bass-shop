@@ -7,6 +7,7 @@ import AmpPage from './pages/AmpPage';
 import PedalPage from './pages/PedalPage';
 import ShoppingCart from './pages/ShoppingCart';
 import IndividualProductPage from './pages/IndividualProductPage';
+
 function App() {
   const [currentProduct, setCurrentProduct] = useState({});
 

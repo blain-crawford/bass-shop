@@ -4,7 +4,7 @@ import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import bassAmps from '../products/bassAmps';
 
-function AmpPage({ currentProduct, setCurrentProduct }) {
+function AmpPage({ currentProduct, setCurrentProduct, cartCount }) {
   const navigate = useNavigate();
 
   const chooseProduct = (productToView) => {
@@ -19,7 +19,7 @@ function AmpPage({ currentProduct, setCurrentProduct }) {
 
   return (
     <div>
-      <Header />
+      <Header cartCount={cartCount} />
       <h1>Hello, Amp Page!</h1>
       <IndividualProductLinks />
       {bassAmps.map((amp, ampIndex) => {
@@ -27,7 +27,7 @@ function AmpPage({ currentProduct, setCurrentProduct }) {
           <img
             onClick={() => {
               chooseProduct(amp.id);
-              navigate(`/product/${currentProduct}`);
+              navigate(`/product/${amp.id}`);
             }}
             alt={amp.title}
             src={amp.images[0]}

@@ -4,7 +4,7 @@ import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import bassPedals from '../products/bassPedals';
 
-function PedalPage({ currentProduct, setCurrentProduct }) {
+function PedalPage({ currentProduct, setCurrentProduct, cartCount }) {
   const navigate = useNavigate();
 
   const chooseProduct = (productToView) => {
@@ -18,7 +18,7 @@ function PedalPage({ currentProduct, setCurrentProduct }) {
   };
   return (
     <div>
-      <Header />
+      <Header cartCount={cartCount} />
       <h1>Hello, Pedal Page!</h1>
       <IndividualProductLinks />
       {bassPedals.map((pedal, pedalIndex) => {

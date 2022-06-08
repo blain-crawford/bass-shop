@@ -4,10 +4,13 @@ import IndividualProductLinks from '../IndividualProductLinks';
 import { useLocation } from 'react-router';
 import allProducts from '../products/allProducts';
 
-function IndividualProductPage({ currentProduct }) {
+function IndividualProductPage({ currentProduct, cartCount }) {
+  useEffect(()=> {
+    console.log(currentProduct)
+  }, [])
   return (
     <div>
-      <Header />
+      <Header cartCount={cartCount} />
       <h2>{currentProduct.title}</h2>
       <IndividualProductLinks />
       {currentProduct.images.map((image, imageIndex) => {

@@ -1,10 +1,18 @@
+import { height } from '@mui/system';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import allProducts from '../products/allProducts';
+import styles from '../css/ProductPage.module.css';
 
-function ShoppingPage({ currentProduct, setCurrentProduct }) {
+function ShoppingPage({
+  currentProduct,
+  setCurrentProduct,
+  cartCount,
+  currentCartContents,
+  setCurrentCartContents,
+}) {
   const navigate = useNavigate();
 
   const chooseProduct = (productToView) => {
@@ -19,22 +27,33 @@ function ShoppingPage({ currentProduct, setCurrentProduct }) {
 
   return (
     <div>
-      <Header />
+      <Header cartCount={cartCount} />
       <h1>Hello, Shopping Page!</h1>
       <IndividualProductLinks />
-      {allProducts.map((product, productIndex) => {
-        return (
-          <img
-            onClick={() => {
-              chooseProduct(product.id);
-              navigate(`/product/${currentProduct}`);
-            }}
-            key={productIndex}
-            alt={product.title}
-            src={product.images[0]}
-          />
-        );
-      })}
+      <main className={styles.CardContainer}>
+        {allProducts.map((product, productIndex) => {
+          return (
+            <div className={styles.card}>
+              <div className={styles.cardImage}>
+                <img
+                  onClick={() => {
+                    chooseProduct(product.id);
+                    navigate(`/product/${currentProduct.id}`);
+                    setCurrentCartContents([
+                      ...currentCartContents,
+                      currentProduct,
+                    ]);
+                  }}
+                  className={styles.image}
+                  key={productIndex}
+                  alt={product.title}
+                  src={product.images[0]}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </main>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
@@ -7,19 +7,33 @@ import AmpPage from './pages/AmpPage';
 import PedalPage from './pages/PedalPage';
 import ShoppingCart from './pages/ShoppingCart';
 import IndividualProductPage from './pages/IndividualProductPage';
+import { ThemeContext } from '../contexts/themeContext';
 
 function App() {
   const [currentProduct, setCurrentProduct] = useState({});
+  // const [currentCartContents, setCurrentCartContents] = useState([]);
+  const cartCount = useContext(ThemeContext)
+  // useEffect(() => {
+  //   setCartCount(currentCartContents.length);
+  //   console.log(currentCartContents);
+  // }, [currentCartContents]);
 
+  useEffect(() => {
+    console.log(cartCount);
+  }, [])
   return (
     <div className='App'>
+      
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage />} exact />
+          <Route path='/' element={<HomePage cartCount={cartCount} />} exact />
           <Route
             path='/all-products'
             element={
               <ProductPage
+                // currentCartContents={currentCartContents}
+                // setCurrentCartContents={setCurrentCartContents}
+                cartCount={cartCount}
                 currentProduct={currentProduct}
                 setCurrentProduct={setCurrentProduct}
               />
@@ -27,23 +41,49 @@ function App() {
           />
           <Route
             path='/cart'
-            element={<ShoppingCart setCurrentProduct={setCurrentProduct} />}
+            element={
+              <ShoppingCart
+                cartCount={cartCount}
+                setCurrentProduct={setCurrentProduct}
+              />
+            }
           />
           <Route
             path='/basses'
-            element={<BassPage setCurrentProduct={setCurrentProduct} />}
+            element={
+              <BassPage
+                
+                cartCount={cartCount}
+                setCurrentProduct={setCurrentProduct}
+              />
+            }
           />
           <Route
             path='/amps'
-            element={<AmpPage setCurrentProduct={setCurrentProduct} />}
+            element={
+              <AmpPage
+                cartCount={cartCount}
+                setCurrentProduct={setCurrentProduct}
+              />
+            }
           />
           <Route
             path='/pedals'
-            element={<PedalPage setCurrentProduct={setCurrentProduct} />}
+            element={
+              <PedalPage
+                cartCount={cartCount}
+                setCurrentProduct={setCurrentProduct}
+              />
+            }
           />
           <Route
             path='/product/:id'
-            element={<IndividualProductPage currentProduct={currentProduct} />}
+            element={
+              <IndividualProductPage
+                cartCount={cartCount}
+                currentProduct={currentProduct}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

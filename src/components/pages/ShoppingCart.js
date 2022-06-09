@@ -37,6 +37,7 @@ function ShoppingCart() {
     }
     console.log(runningCost);
     setTotalCost(runningCost);
+    cartContext.setCartCount(cartContext.currentCartContents.length)
   }, [cartContext.currentCartContents]);
 
   return (

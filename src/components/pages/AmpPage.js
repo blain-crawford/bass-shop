@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import bassAmps from '../products/bassAmps';
-
-function AmpPage({ currentProduct, setCurrentProduct, cartCount }) {
+import { ThemeContext } from '../../contexts/themeContext';
+function AmpPage() {
   const navigate = useNavigate();
+  const cartContext = useContext(ThemeContext);
 
   const chooseProduct = (productToView) => {
     for (let i = 0; i < bassAmps.length; i++) {
       if (bassAmps[i].id === productToView) {
-        setCurrentProduct(bassAmps[i]);
-        console.log(currentProduct);
+        cartContext.setCurrentProduct(bassAmps[i]);
+        console.log(cartContext.currentProduct);
       }
     }
     console.log(productToView);
@@ -19,7 +20,6 @@ function AmpPage({ currentProduct, setCurrentProduct, cartCount }) {
 
   return (
     <div>
-      <Header cartCount={cartCount} />
       <h1>Hello, Amp Page!</h1>
       <IndividualProductLinks />
       {bassAmps.map((amp, ampIndex) => {

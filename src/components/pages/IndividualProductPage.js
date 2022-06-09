@@ -1,20 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
-import { useLocation } from 'react-router';
 import allProducts from '../products/allProducts';
+import { ThemeContext } from '../../contexts/themeContext';
 
-function IndividualProductPage({ currentProduct, cartCount }) {
-  useEffect(()=> {
-    console.log(currentProduct)
-  }, [])
+function IndividualProductPage() {
+  const cartContext = useContext(ThemeContext);
+  useEffect(() => {
+    console.log(cartContext.currentProduct);
+  }, []);
   return (
     <div>
-      <Header cartCount={cartCount} />
-      <h2>{currentProduct.title}</h2>
+      <h2>{cartContext.currentProduct.title}</h2>
       <IndividualProductLinks />
-      {currentProduct.images.map((image, imageIndex) => {
-        return <img src={image} key={imageIndex} alt={currentProduct.title} />;
+      {cartContext.currentProduct.images.map((image, imageIndex) => {
+        return (
+          <img
+            src={image}
+            key={imageIndex}
+            alt={cartContext.currentProduct.title}
+          />
+        );
       })}
     </div>
   );

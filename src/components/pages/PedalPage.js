@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import bassPedals from '../products/bassPedals';
+import { ThemeContext } from '../../contexts/themeContext';
 
-function PedalPage({ currentProduct, setCurrentProduct, cartCount }) {
+function PedalPage() {
   const navigate = useNavigate();
+  const cartContext = useContext(ThemeContext);
 
   const chooseProduct = (productToView) => {
     for (let i = 0; i < bassPedals.length; i++) {
       if (bassPedals[i].id === productToView) {
-        setCurrentProduct(bassPedals[i]);
-        console.log(currentProduct);
+        cartContext.setCurrentProduct(bassPedals[i]);
+        console.log(cartContext.currentProduct);
       }
     }
     console.log(productToView);
   };
   return (
     <div>
-      <Header cartCount={cartCount} />
       <h1>Hello, Pedal Page!</h1>
       <IndividualProductLinks />
       {bassPedals.map((pedal, pedalIndex) => {

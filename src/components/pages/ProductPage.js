@@ -1,25 +1,22 @@
 import { height } from '@mui/system';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import allProducts from '../products/allProducts';
 import styles from '../css/ProductPage.module.css';
+import ThemeContextProvider from '../../contexts/themeContext';
+import { ThemeContext } from '../../contexts/themeContext';
 
-function ShoppingPage({
-  currentProduct,
-  setCurrentProduct,
-  cartCount,
-  currentCartContents,
-  setCurrentCartContents,
-}) {
+function ProductPage() {
   const navigate = useNavigate();
+  const cartContext = useContext(ThemeContext);
 
   const chooseProduct = (productToView) => {
     for (let i = 0; i < allProducts.length; i++) {
       if (allProducts[i].id === productToView) {
-        setCurrentProduct(allProducts[i]);
-        console.log(currentProduct);
+        cartContext.setCurrentProduct(allProducts[i]);
+        console.log(cartContext.currentProduct);
       }
     }
     console.log(productToView);
@@ -27,22 +24,17 @@ function ShoppingPage({
 
   return (
     <div>
-      <Header cartCount={cartCount} />
       <h1>Hello, Shopping Page!</h1>
       <IndividualProductLinks />
       <main className={styles.CardContainer}>
         {allProducts.map((product, productIndex) => {
           return (
-            <div className={styles.card}>
+            <div key={productIndex} className={styles.card}>
               <div className={styles.cardImage}>
                 <img
                   onClick={() => {
                     chooseProduct(product.id);
-                    navigate(`/product/${currentProduct.id}`);
-                    setCurrentCartContents([
-                      ...currentCartContents,
-                      currentProduct,
-                    ]);
+                    navigate(`/product/${cartContext.currentProduct.id}`);
                   }}
                   className={styles.image}
                   key={productIndex}
@@ -58,4 +50,4 @@ function ShoppingPage({
   );
 }
 
-export default ShoppingPage;
+export default ProductPage;

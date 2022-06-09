@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import basses from '../products/basses';
+import { ThemeContext } from '../../contexts/themeContext';
 
-function BassPage({ currentProduct, setCurrentProduct, cartCount }) {
+function BassPage() {
   const navigate = useNavigate();
+  const cartContext = useContext(ThemeContext);
 
   const chooseProduct = (productToView) => {
     for (let i = 0; i < basses.length; i++) {
       if (basses[i].id === productToView) {
-        setCurrentProduct(basses[i]);
-        console.log(currentProduct)
+        cartContext.setCurrentProduct(basses[i]);
+        console.log(cartContext.currentProduct);
       }
     }
     console.log(productToView);
@@ -19,7 +21,6 @@ function BassPage({ currentProduct, setCurrentProduct, cartCount }) {
 
   return (
     <div>
-      <Header cartCount={cartCount}/>
       <h1>Hello, Bass Page!</h1>
       <IndividualProductLinks />
       {basses.map((bass, bassIndex) => {

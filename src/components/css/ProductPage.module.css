@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.CardContainer {
+.cardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -11,7 +11,7 @@
   border: 1px solid rgb(0, 0, 0, .2);
 }
 
-/* .card {
+.card {
   cursor: pointer;
   max-width: 300px;
   padding: 15px 5px 10px 5px;
@@ -23,7 +23,7 @@
 
 .card:hover {
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
-} */
+}
 
 .cardImage {
   width: 90%;

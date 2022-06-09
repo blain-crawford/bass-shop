@@ -1,9 +1,11 @@
-import React, { useContext, useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import Header from '../Header';
+import { Button } from '@mui/material';
 import IndividualProductLinks from '../IndividualProductLinks';
 import bassAmps from '../products/bassAmps';
 import { ThemeContext } from '../../contexts/themeContext';
+import styles from '../css/ProductPage.module.css';
 function AmpPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);
@@ -18,23 +20,60 @@ function AmpPage() {
     console.log(productToView);
   };
 
+  const addToCart = (productToAdd) => {
+    cartContext.setCurrentCartContents([
+      ...cartContext.currentCartContents,
+      productToAdd,
+    ]);
+    console.log(cartContext.currentCartContents);
+  };
+
+  useEffect(() => {
+    cartContext.setCartCount(cartContext.currentCartContents.length)
+  }, [cartContext.currentCartContents])
+
   return (
     <div>
-      <h1>Hello, Amp Page!</h1>
+      <h1 className={styles.pageTitle}>Bass Amps in Stock</h1>
       <IndividualProductLinks />
-      {bassAmps.map((amp, ampIndex) => {
-        return (
-          <img
-            onClick={() => {
-              chooseProduct(amp.id);
-              navigate(`/product/${amp.id}`);
-            }}
-            alt={amp.title}
-            src={amp.images[0]}
-            key={ampIndex}
-          />
+      <div className={styles.cardContainer}>
+        {bassAmps.map((amp, ampIndex) => {
+          return (
+            <div key={ampIndex} className={styles.card}>
+              <div className={styles.cardImage}>
+                <img
+                  onClick={() => {
+                    chooseProduct(amp.id);
+                    navigate(`/product/${cartContext.currentProduct.id}`);
+                  }}
+                  className={styles.image}
+                  key={ampIndex}
+                  alt={amp.title}
+                  src={amp.images[0]}
+                />
+              </div>
+              <div className={styles.productName}>
+                <p>{amp.title}</p>
+              </div>
+              <div className={styles.price}>
+                <h4>
+                  {amp.pricing.display} {amp.pricing.currency}
+                </h4>
+              </div>
+              <Button
+                variant='none'
+                onClick={() => {
+                  addToCart(amp);
+                }}
+                className={styles.addButton}
+              >
+                Add To Cart
+              </Button>
+            </div>
+          );
+        })}
         );
-      })}
+      </div>
     </div>
   );
 }

@@ -15,9 +15,11 @@ function Header() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        border: '1px solid black',
+        marginBottom: '20px'
       }}
     >
-      <ul>
+      <ul style={{display: 'flex', gap: '70px', margin: '0 auto'}}>
         <Link to='/'>Home</Link>
         <Link to='/all-products'>Products</Link>
         <Link to='/cart'>Shopping Cart</Link>
@@ -27,7 +29,9 @@ function Header() {
         style={{
           display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'flex-end',
           alignItems: 'center',
+          border: '1px solid black'
         }}
       >
         <p
@@ -35,13 +39,13 @@ function Header() {
             margin: '0',
             padding: '0',
             position: 'relative',
-            top: '40px',
-            fontSize: '20px',
+            top: '24px',
+            fontSize: '15px',
           }}
         >
           {cartContext.cartCount}
         </p>
-        <ShoppingCartOutlinedIcon style={{ fontSize: '80px' }} />
+        <ShoppingCartOutlinedIcon style={{ fontSize: '70px', position: 'relative', bottom: '10px' }} />
       </div>
     </header>
   );

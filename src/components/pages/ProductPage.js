@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Button from '@mui/material/Button';
 import React, { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
@@ -33,7 +34,7 @@ function ProductPage() {
     <div>
       <h1 className={styles.pageTitle}>All Available Products!</h1>
       <IndividualProductLinks />
-      <main className={styles.CardContainer}>
+      <main className={styles.cardContainer}>
         {allProducts.map((product, productIndex) => {
           return (
             <div key={productIndex} className={styles.card}>
@@ -55,7 +56,7 @@ function ProductPage() {
               <div className={styles.price}>
                 <h4>{product.pricing.display} {product.pricing.currency}</h4>
               </div>
-              <Button onClick={() => {addToCart(product)}} className={styles.addButton}>Add To Cart</Button>
+              <Button variant="none" onClick={() => {addToCart(product)}} className={styles.addButton}>Add To Cart</Button>
             </div>
           );
         })}

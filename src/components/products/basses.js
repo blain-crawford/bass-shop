@@ -7,6 +7,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$699',
+      cost: 699,
       currency: 'USD',
     },
     images: [
@@ -22,6 +23,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$10,000',
+      cost: 10000,
       currency: 'USD',
     },
     images: [
@@ -37,6 +39,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$1799',
+      cost: 1799,
       currency: 'USD',
     },
     images: [
@@ -52,6 +55,7 @@ const basses = [
     strings: 6,
     pricing: {
       display: '$2600',
+      cost: 3600,
       currency: 'USD',
     },
     images: [
@@ -68,6 +72,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$50,000',
+      cost: 50000,
       currency: 'USD',
     },
     images: [
@@ -83,6 +88,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$740',
+      cost: 740,
       currency: 'USD',
     },
     images: [
@@ -98,6 +104,7 @@ const basses = [
     strings: 5,
     pricing: {
       display: '$8953.05',
+      cost: 8935.05,
       currency: 'USD',
     },
     images: [
@@ -113,6 +120,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$3500',
+      cost: 3500,
       currency: 'USD',
     },
     images: [
@@ -128,6 +136,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$719.20',
+      cost: 719.20,
       currency: 'USD',
     },
     images: [
@@ -143,6 +152,7 @@ const basses = [
     strings: 5,
     pricing: {
       display: '$1265.79',
+      cost: 1265.79,
       currency: 'USD',
     },
     images: [
@@ -158,6 +168,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$375',
+      cost: 375,
       currency: 'USD',
     },
     images: [
@@ -173,6 +184,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$2500',
+      cost: 2500,
       currency: 'USD',
     },
     images: [
@@ -188,6 +200,7 @@ const basses = [
     strings: 7,
     pricing: {
       display: '$5799.99',
+      cost: 5799.99,
       currency: 'USD',
     },
     images: [
@@ -203,6 +216,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$1275',
+      cost: 1275,
       currency: 'USD',
     },
     images: [
@@ -218,6 +232,7 @@ const basses = [
     strings: 4,
     pricing: {
       display: '$180',
+      cost: 180,
       currency: 'USD',
     },
     images: [

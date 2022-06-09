@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode style={{margin: '0', padding: '0'}}>
     <ThemeContextProvider>
       <App />
     </ThemeContextProvider>

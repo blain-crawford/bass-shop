@@ -5,6 +5,7 @@ const bassPedals = [
     condition: 'Mint',
     pricing: {
       display: '$750',
+      cost: 750,
       currency: 'USD',
     },
     images: [
@@ -19,6 +20,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$190',
+      cost: 190,
       currency: 'USD',
     },
     images: [
@@ -33,6 +35,7 @@ const bassPedals = [
     condition: 'Brand New',
     pricing: {
       display: '$200',
+      cost: 200,
       currency: 'USD',
     },
     images: [
@@ -45,6 +48,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$109.99',
+      cost: 109.99,
       currency: 'USD',
     },
     images: [
@@ -58,6 +62,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$110',
+      cost: 110,
       currency: 'USD',
     },
     images: [
@@ -72,6 +77,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$185',
+      cost: 185,
       currency: 'USD',
     },
     images: [
@@ -86,6 +92,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$92',
+      cost: 92,
       currency: 'USD',
     },
     images: [
@@ -100,6 +107,7 @@ const bassPedals = [
     condition: 'Mint',
     pricing: {
       display: '$160',
+      cost: 160,
       currency: 'USD',
     },
     images: [
@@ -112,6 +120,7 @@ const bassPedals = [
     condition: 'Brand New',
     pricing: {
       display: '$1199.99',
+      cost: 1199.99,
       currency: 'USD',
     },
     images: [
@@ -125,6 +134,7 @@ const bassPedals = [
     condition: 'Very Good',
     pricing: {
       display: '$160',
+      cost: 160,
       currency: 'USD',
     },
     images: [
@@ -139,6 +149,7 @@ const bassPedals = [
     condition: 'Very Good',
     pricing: {
       display: '$270',
+      cost: 270,
       currency: 'USD',
     },
     images: [
@@ -153,6 +164,7 @@ const bassPedals = [
     condition: 'Very Good',
     pricing: {
       display: '$85',
+      cost: 85,
       currency: 'USD',
     },
     images: [
@@ -167,6 +179,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$89',
+      cost: 89,
       currency: 'USD',
     },
     images: [
@@ -181,6 +194,7 @@ const bassPedals = [
     condition: 'Good',
     pricing: {
       display: '$90',
+      cost: 90,
       currency: 'USD',
     },
     images: [
@@ -195,6 +209,7 @@ const bassPedals = [
     condition: 'Excellent',
     pricing: {
       display: '$199',
+      cost: 199,
       currency: 'USD',
     },
     images: [

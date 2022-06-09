@@ -5,6 +5,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$559.92',
+      cost: 559.92,
       currency: 'USD',
     },
     images: [
@@ -19,6 +20,7 @@ const bassAmps = [
     condition: 'Good',
     pricing: {
       display: '$700',
+      cost: 700,
       currency: 'USD',
     },
     images: [
@@ -33,6 +35,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$550',
+      cost: 550,
       currency: 'USD',
     },
     images: [
@@ -61,6 +64,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$799.99',
+      cost: 799.99,
       currency: 'USD',
     },
     images: [
@@ -75,6 +79,7 @@ const bassAmps = [
     condition: 'Brand New',
     pricing: {
       display: '$391.67',
+      cost: 391.67,
       currency: 'USD',
     },
     images: [
@@ -89,6 +94,7 @@ const bassAmps = [
     condition: 'Excellent',
     pricing: {
       display: '$1119.83',
+      cost: 1119.83,
       currency: 'USD',
     },
     images: [
@@ -104,6 +110,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$675',
+      cost: 675,
       currency: 'USD',
     },
     images: [
@@ -131,6 +138,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$1800',
+      cost: 1800,
       currency: 'USD',
     },
     images: [
@@ -145,6 +153,7 @@ const bassAmps = [
     condition: 'Mint',
     pricing: {
       display: '$700',
+      cost: 700,
       currency: 'USD',
     },
     images: [
@@ -171,6 +180,7 @@ const bassAmps = [
     condition: 'Excellent',
     pricing: {
       display: '$650',
+      cost: 650,
       currency: 'USD',
     },
     images: [
@@ -183,6 +193,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$350',
+      cost: 350,
       currency: 'USD',
     },
     images: [
@@ -197,6 +208,7 @@ const bassAmps = [
     condition: 'Excellent',
     pricing: {
       display: '$800',
+      cost: 800,
       currency: 'USD',
     },
     images: [

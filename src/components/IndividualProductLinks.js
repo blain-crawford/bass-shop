@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function IndividualProductLinks() {
   return (
-    <div>
-      <ul>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+      <ul style={{display: 'flex', justifyContent: 'space-between', width: '60%', padding: '10px'}}>
         <Link to='/all-products'>All products</Link>
         <Link to='/basses'>Basses</Link>
         <Link to='/amps'>Amps</Link>

@@ -2,3 +2,109 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.bassPreviewContainer {
+  display: flex;
+  border: 1px solid rgb(0, 0, 0, .2);
+  padding: 50px;
+}
+
+.bassPics {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.thumbNail {
+  width: 70%;
+  height: auto;
+}
+
+.selectedPreview {
+  margin-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 2;
+  padding: 0;
+}
+
+.chosenView {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.productInteractions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.interactionDivPrice {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: 1px solid rgb(0, 0, 0, .4);
+}
+
+.interactionDivButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.price {
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 60px;
+  color: red;
+}
+
+.purchaseDetails {
+  display: flex;
+  gap: 40px;
+}
+
+.detailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailIcon {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.detailDescription {
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.buttonDiv {
+  height: 100%;
+}
+
+.addButton {
+  width: 80%;
+  color: black;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.addButton:hover {
+  background-color: rgba(238, 144, 238, 0.1);
+  border: 1px solid black;
+}

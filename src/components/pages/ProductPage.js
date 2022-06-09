@@ -22,13 +22,16 @@ function ProductPage() {
   };
 
   const addToCart = (productToAdd) => {
-    cartContext.setCurrentCartContents([...cartContext.currentCartContents, productToAdd]);
+    cartContext.setCurrentCartContents([
+      ...cartContext.currentCartContents,
+      productToAdd,
+    ]);
     console.log(cartContext.currentCartContents);
-  }
+  };
 
   useEffect(() => {
-    cartContext.setCartCount(cartContext.currentCartContents.length)
-  }, [cartContext.currentCartContents])
+    cartContext.setCartCount(cartContext.currentCartContents.length);
+  }, [cartContext.currentCartContents]);
 
   return (
     <div>
@@ -54,9 +57,19 @@ function ProductPage() {
                 <p>{product.title}</p>
               </div>
               <div className={styles.price}>
-                <h4>{product.pricing.display} {product.pricing.currency}</h4>
+                <h4>
+                  {product.pricing.display} {product.pricing.currency}
+                </h4>
               </div>
-              <Button variant="none" onClick={() => {addToCart(product)}} className={styles.addButton}>Add To Cart</Button>
+              <Button
+                variant='none'
+                onClick={() => {
+                  addToCart(product);
+                }}
+                className={styles.addButton}
+              >
+                Add To Cart
+              </Button>
             </div>
           );
         })}

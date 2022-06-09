@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -16,10 +17,10 @@ function Header() {
         alignItems: 'center',
         justifyContent: 'space-between',
         border: '1px solid black',
-        marginBottom: '20px'
+        marginBottom: '20px',
       }}
     >
-      <ul style={{display: 'flex', gap: '70px', margin: '0 auto'}}>
+      <ul style={{ display: 'flex', gap: '70px', margin: '0 auto' }}>
         <Link to='/'>Home</Link>
         <Link to='/all-products'>Products</Link>
         <Link to='/cart'>Shopping Cart</Link>
@@ -31,7 +32,7 @@ function Header() {
           flexDirection: 'column',
           justifyContent: 'flex-end',
           alignItems: 'center',
-          border: '1px solid black'
+          border: '1px solid black',
         }}
       >
         <p
@@ -45,7 +46,11 @@ function Header() {
         >
           {cartContext.cartCount}
         </p>
-        <ShoppingCartOutlinedIcon style={{ fontSize: '70px', position: 'relative', bottom: '10px' }} />
+        <Link to="/cart">
+          <ShoppingCartOutlinedIcon
+            style={{color: 'black', fontSize: '70px', position: 'relative', bottom: '10px' }}
+        />
+        </Link>
       </div>
     </header>
   );

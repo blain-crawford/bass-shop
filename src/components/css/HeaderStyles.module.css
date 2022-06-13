@@ -7,13 +7,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  border: 1px solid blue;
 }
 
 .shopLogo {
   font-family: logoFont;
   font-size: 60px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -33,8 +32,8 @@
 }
 
 .navBar {
-  border: 1px solid green;
   padding: 10px;
+  border: 1px solid rgb(0 , 0, 0, .2);
 }
 
 .cartCount {
@@ -48,11 +47,8 @@
 .links {
   color: green;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 70px;
   margin: 0 auto;
 }
 
-li {
-  border: 1px solid blue;
-}

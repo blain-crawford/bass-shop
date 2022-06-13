@@ -3,7 +3,9 @@ import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/themeContext';
 import styles from '../components/css/HeaderStyles.module.css';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { StyledShoppingCart } from './muiStyles/ButtonAndIconStyles';
+import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
 function Header() {
   const cartContext = useContext(ThemeContext);
 

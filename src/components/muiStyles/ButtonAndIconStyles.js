@@ -51,9 +51,8 @@ export const StyledAddButton = styled(Button, {
   },
 });
 
-export const StyledShoppingCart = (ShoppingCartOutlinedIcon,
-{
-  name: 'StyledShoppingCart',
+export const StyledShoppingCart = styled(ShoppingCartOutlinedIcon, {
+  name: 'StyledShoppingCart'
 })({
   color: 'black',
   fontSize: '70px',

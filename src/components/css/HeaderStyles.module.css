@@ -43,7 +43,8 @@
 }
 
 .shopLogo {
-  -webkit-text-stroke: .25px #6e3ec6;
+  cursor: pointer;
+  -webkit-text-stroke: .25px black;
   color: white;
   position: relative;
   left: 30px;

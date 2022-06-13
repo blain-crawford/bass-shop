@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/themeContext';
 import styles from '../components/css/HeaderStyles.module.css';
@@ -8,6 +9,7 @@ import { StyledShoppingCart } from './muiStyles/ButtonAndIconStyles';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
 function Header() {
   const cartContext = useContext(ThemeContext);
+  const navigate = useNavigate()
 
   return (
     <header className={styles.headerContainer}>
@@ -22,7 +24,9 @@ function Header() {
         </div>
       </div>
       <div className={styles.logoAndCart}>
-        <h1 className={styles.shopLogo}>Bass Shop</h1>
+        <h1 onClick={() => {
+          navigate('/')
+        }} className={styles.shopLogo}>Bass Shop</h1>
         <div className={styles.cartDisplay}>
           <p className={styles.cartCount}>{cartContext.cartCount}</p>
           <Link to='/cart'>

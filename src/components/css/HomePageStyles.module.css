@@ -1,0 +1,21 @@
+.mainPageContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.previewContainer {
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.productPreview {
+  border: 5px solid rgba(141,30,170,.8);
+}

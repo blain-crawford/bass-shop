@@ -25,8 +25,9 @@
 }
 
 .twoDay {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 0 20px 0 20px;
+  border: 8px solid rgba(141,30,170,.8);
   text-align: center;
   background-color: white;
   color: rgba(141,30,170,1);

@@ -1,6 +1,10 @@
 .pageTitle{
+  font-family: sans-serif;
+  font-size: 40px;
   margin: 0 auto;
   text-align: center;
+  color: #6e3ec6;
+  -webkit-text-stroke: 1px black;
 }
 
 .cardContainer {
@@ -39,11 +43,13 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: red;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
 }

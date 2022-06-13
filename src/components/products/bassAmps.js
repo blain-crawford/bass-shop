@@ -50,6 +50,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$2000',
+      cost: 2000,
       currency: 'USD',
     },
     images: [
@@ -124,6 +125,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$350',
+      cost: 350,
       currency: 'USD',
     },
     images: [
@@ -168,6 +170,7 @@ const bassAmps = [
     condition: 'Very Good',
     pricing: {
       display: '$550',
+      cost: 550,
       currency: 'USD',
     },
     images: [

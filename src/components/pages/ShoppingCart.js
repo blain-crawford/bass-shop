@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import Header from '../Header';
 import { ThemeContext } from '../../contexts/themeContext';
 import styles from '../css/ShoppingCart.module.css';
-import { Link } from 'react-router-dom';
 import allProducts from '../products/allProducts';
+import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
+
 function ShoppingCart() {
   const [totalCost, setTotalCost] = useState(0);
   const cartContext = useContext(ThemeContext);
@@ -13,7 +13,8 @@ function ShoppingCart() {
   const chooseProduct = (productToView) => {
     for (let i = 0; i < allProducts.length; i++) {
       if (allProducts[i].id === productToView) {
-        cartContext.setCurrentProduct(allProducts[i]);
+        // cartContext.setCurrentProduct(allProducts[i]);
+        console.log(allProducts[i])
       }
     }
   };
@@ -40,6 +41,7 @@ function ShoppingCart() {
   return (
     <div className={styles.shoppingCart}>
       <div className={styles.shoppingCartHeader}>
+        <ShoppingCartOutlined className={styles.cartIcon}/>
         <h2>Shopping Cart</h2>
       </div>
       <div className={styles.cartContents}>
@@ -50,7 +52,7 @@ function ShoppingCart() {
                 <img
                   onClick={() => {
                     chooseProduct(product.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${product.id}`);
                   }}
                   alt={product.title}
                   key={productIndex}
@@ -62,7 +64,7 @@ function ShoppingCart() {
                 <h2
                   onClick={() => {
                     chooseProduct(product.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${product.id}`);
                   }}
                   className={styles.productName}
                 >

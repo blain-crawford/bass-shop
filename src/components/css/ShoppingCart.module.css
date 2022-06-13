@@ -7,7 +7,17 @@
 .shoppingCartHeader {
   border: 1px solid black;
   color: white;
-  background-color: purple;
+  background: rgb(62,110,240);
+  background: linear-gradient(200deg, rgba(62,110,240,1) 0%, rgba(141,30,170,1) 49%, rgba(62,110,240,1) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  height: 100%;
+  font-size: 50px;
+  border-right: 1px solid rgb(255, 255, 255, .2) ;
+  margin-right: 30px;
 }
 
 .cartContents {
@@ -45,6 +55,8 @@
 }
 
 .productName {
+  padding: 0 0 10px 0;
+  margin: 10px 0 0 0;
   text-decoration: underline;
   color: purple;
   cursor: pointer;

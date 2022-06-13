@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import Button from '@mui/material/Button';
 import React, { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import IndividualProductLinks from '../IndividualProductLinks';
@@ -32,7 +31,7 @@ function ProductPage() {
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>All Available Products!</h1>
+      <h1 className={styles.pageTitle}>All Available Products</h1>
       <IndividualProductLinks />
       <main className={styles.cardContainer}>
         {allProducts.map((product, productIndex) => {

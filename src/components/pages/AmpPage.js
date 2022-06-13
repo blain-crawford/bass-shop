@@ -6,6 +6,8 @@ import IndividualProductLinks from '../IndividualProductLinks';
 import bassAmps from '../products/bassAmps';
 import { ThemeContext } from '../../contexts/themeContext';
 import styles from '../css/ProductPage.module.css';
+import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles';
+
 function AmpPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);
@@ -57,7 +59,7 @@ function AmpPage() {
                   {amp.pricing.display} {amp.pricing.currency}
                 </h4>
               </div>
-              <Button
+              <StyledAddButton
                 variant='none'
                 onClick={() => {
                   addToCart(amp);
@@ -65,7 +67,7 @@ function AmpPage() {
                 className={styles.addButton}
               >
                 Add To Cart
-              </Button>
+              </StyledAddButton>
             </div>
           );
         })}

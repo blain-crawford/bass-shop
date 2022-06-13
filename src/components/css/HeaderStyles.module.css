@@ -1,0 +1,58 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../../fonts//Musicografi.ttf);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+}
+
+.shopLogo {
+  font-family: logoFont;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.logoAndCart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cartDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navBar {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.cartCount {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 24px;
+  font-size: 15px;
+}
+
+.links {
+  color: green;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 0 auto;
+}
+
+li {
+  border: 1px solid blue;
+}

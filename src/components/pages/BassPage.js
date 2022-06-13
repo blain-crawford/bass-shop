@@ -7,6 +7,7 @@ import basses from '../products/basses';
 import { ThemeContext } from '../../contexts/themeContext';
 import styles from '../css/ProductPage.module.css';
 import { Button } from '@mui/material';
+import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles';
 function BassPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);
@@ -58,7 +59,7 @@ function BassPage() {
                   {bass.pricing.display} {bass.pricing.currency}
                 </h4>
               </div>
-              <Button
+              <StyledAddButton
                 variant='none'
                 onClick={() => {
                   addToCart(bass);
@@ -66,7 +67,7 @@ function BassPage() {
                 className={styles.addButton}
               >
                 Add To Cart
-              </Button>
+              </StyledAddButton>
             </div>
           );
         })}

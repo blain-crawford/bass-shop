@@ -7,6 +7,8 @@ import bassPedals from '../products/bassPedals';
 import { ThemeContext } from '../../contexts/themeContext';
 import styles from '../css/ProductPage.module.css';
 import { Button } from '@mui/material';
+import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles';
+
 function PedalPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);
@@ -58,7 +60,7 @@ function PedalPage() {
                   {pedal.pricing.display} {pedal.pricing.currency}
                 </h4>
               </div>
-              <Button
+              <StyledAddButton
                 variant='none'
                 onClick={() => {
                   addToCart(pedal);
@@ -66,7 +68,7 @@ function PedalPage() {
                 className={styles.addButton}
               >
                 Add To Cart
-              </Button>
+              </StyledAddButton>
             </div>
           );
         })}

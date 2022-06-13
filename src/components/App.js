@@ -14,7 +14,6 @@ function App() {
   const cartContext = useContext(ThemeContext);
 
   useEffect(() => {
-    // console.log(cartContext);
     cartContext.setCartCount(cartContext.currentCartContents.length);
   }, []);
 

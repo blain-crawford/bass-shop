@@ -6,7 +6,7 @@ import IndividualProductLinks from '../IndividualProductLinks';
 import allProducts from '../products/allProducts';
 import styles from '../css/ProductPage.module.css';
 import { ThemeContext } from '../../contexts/themeContext';
-
+import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles'
 function ProductPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);
@@ -15,10 +15,8 @@ function ProductPage() {
     for (let i = 0; i < allProducts.length; i++) {
       if (allProducts[i].id === productToView) {
         cartContext.setCurrentProduct(allProducts[i]);
-        console.log(cartContext.currentProduct);
       }
     }
-    console.log(productToView);
   };
 
   const addToCart = (productToAdd) => {
@@ -26,7 +24,6 @@ function ProductPage() {
       ...cartContext.currentCartContents,
       productToAdd,
     ]);
-    console.log(cartContext.currentCartContents);
   };
 
   useEffect(() => {
@@ -45,7 +42,7 @@ function ProductPage() {
                 <img
                   onClick={() => {
                     chooseProduct(product.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${product.id}`);
                   }}
                   className={styles.image}
                   key={productIndex}
@@ -61,7 +58,7 @@ function ProductPage() {
                   {product.pricing.display} {product.pricing.currency}
                 </h4>
               </div>
-              <Button
+              <StyledAddButton
                 variant='none'
                 onClick={() => {
                   addToCart(product);
@@ -69,7 +66,7 @@ function ProductPage() {
                 className={styles.addButton}
               >
                 Add To Cart
-              </Button>
+              </StyledAddButton>
             </div>
           );
         })}

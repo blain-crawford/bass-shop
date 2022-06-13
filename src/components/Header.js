@@ -6,9 +6,6 @@ import { ThemeContext } from '../contexts/themeContext';
 function Header() {
   const cartContext = useContext(ThemeContext);
 
-  useEffect(() => {
-    console.log(cartContext);
-  }, []);
   return (
     <header
       className='page-header'

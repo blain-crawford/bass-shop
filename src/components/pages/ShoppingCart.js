@@ -14,17 +14,15 @@ function ShoppingCart() {
     for (let i = 0; i < allProducts.length; i++) {
       if (allProducts[i].id === productToView) {
         cartContext.setCurrentProduct(allProducts[i]);
-        console.log(cartContext.currentProduct);
       }
     }
-    console.log(productToView);
   };
 
   const removeFromCart = (productToRemove) => {
     const newCart = [...cartContext.currentCartContents];
     for (let i = 0; i < newCart.length; i++) {
       if (newCart[i].id === productToRemove) {
-        newCart.splice(newCart.indexOf(newCart[i]), 1)
+        newCart.splice(newCart.indexOf(newCart[i]), 1);
       }
     }
     cartContext.setCurrentCartContents(newCart);
@@ -35,20 +33,19 @@ function ShoppingCart() {
     for (let i = 0; i < cartContext.currentCartContents.length; i++) {
       runningCost += cartContext.currentCartContents[i].pricing.cost;
     }
-    console.log(runningCost);
     setTotalCost(runningCost);
-    cartContext.setCartCount(cartContext.currentCartContents.length)
+    cartContext.setCartCount(cartContext.currentCartContents.length);
   }, [cartContext.currentCartContents]);
 
   return (
     <div className={styles.shoppingCart}>
       <div className={styles.shoppingCartHeader}>
-        <h1>Hello, Shopping Cart!</h1>
+        <h2>Shopping Cart</h2>
       </div>
       <div className={styles.cartContents}>
         {cartContext.currentCartContents.map((product, productIndex) => {
           return (
-            <div className={styles.productFullContainer}>
+            <div key={productIndex} className={styles.productFullContainer}>
               <div className={styles.productImageContainer}>
                 <img
                   onClick={() => {

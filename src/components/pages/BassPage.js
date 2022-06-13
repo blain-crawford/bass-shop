@@ -15,10 +15,8 @@ function BassPage() {
     for (let i = 0; i < basses.length; i++) {
       if (basses[i].id === productToView) {
         cartContext.setCurrentProduct(basses[i]);
-        console.log(cartContext.currentProduct);
       }
     }
-    console.log(productToView);
   };
 
   const addToCart = (productToAdd) => {
@@ -26,7 +24,6 @@ function BassPage() {
       ...cartContext.currentCartContents,
       productToAdd,
     ]);
-    console.log(cartContext.currentCartContents);
   };
 
   useEffect(() => {
@@ -45,7 +42,7 @@ function BassPage() {
                 <img
                   onClick={() => {
                     chooseProduct(bass.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${bass.id}`);
                   }}
                   className={styles.image}
                   key={bassIndex}

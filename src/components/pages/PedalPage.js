@@ -15,10 +15,8 @@ function PedalPage() {
     for (let i = 0; i < bassPedals.length; i++) {
       if (bassPedals[i].id === productToView) {
         cartContext.setCurrentProduct(bassPedals[i]);
-        console.log(cartContext.currentProduct);
       }
     }
-    console.log(productToView);
   };
 
   const addToCart = (productToAdd) => {
@@ -26,7 +24,6 @@ function PedalPage() {
       ...cartContext.currentCartContents,
       productToAdd,
     ]);
-    console.log(cartContext.currentCartContents);
   };
 
   useEffect(() => {
@@ -45,7 +42,7 @@ function PedalPage() {
                 <img
                   onClick={() => {
                     chooseProduct(pedal.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${pedal.id}`);
                   }}
                   className={styles.image}
                   key={pedalIndex}

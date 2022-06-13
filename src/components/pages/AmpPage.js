@@ -14,10 +14,8 @@ function AmpPage() {
     for (let i = 0; i < bassAmps.length; i++) {
       if (bassAmps[i].id === productToView) {
         cartContext.setCurrentProduct(bassAmps[i]);
-        console.log(cartContext.currentProduct);
       }
     }
-    console.log(productToView);
   };
 
   const addToCart = (productToAdd) => {
@@ -25,7 +23,6 @@ function AmpPage() {
       ...cartContext.currentCartContents,
       productToAdd,
     ]);
-    console.log(cartContext.currentCartContents);
   };
 
   useEffect(() => {
@@ -44,7 +41,7 @@ function AmpPage() {
                 <img
                   onClick={() => {
                     chooseProduct(amp.id);
-                    navigate(`/product/${cartContext.currentProduct.id}`);
+                    navigate(`/product/${amp.id}`);
                   }}
                   className={styles.image}
                   key={ampIndex}

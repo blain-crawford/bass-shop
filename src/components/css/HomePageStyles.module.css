@@ -17,7 +17,7 @@
 
 .previewContainer {
   font-family: sans-serif;
-  margin: 70px auto;
+  margin: 20px auto;
   display: flex;
   gap: 20px;
 }
@@ -41,4 +41,45 @@
 
 .productPreview:hover {
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+  outline: 5px solid rgb(62, 110, 240);
+}
+
+.inStock {
+  padding: 0;
+  font-size: 20px;
+  margin-top: 20px;
+  color: red;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.purchaseDetails {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.detailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 230, 229, .4);
+  padding: 20px;
+  border-radius: 200px;
+  margin: 20px;
+}
+
+.detailIcon {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.detailDescription {
+  margin: 0 0 50px 0;
+  padding: 0;
 }

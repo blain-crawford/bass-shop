@@ -4,7 +4,13 @@ import allProducts from '../products/allProducts';
 import styles from '../css/HomePageStyles.module.css';
 import IndividualProductLinks from '../IndividualProductLinks';
 import { ThemeContext } from '../../contexts/themeContext';
-
+import {
+  StyledAddButton,
+  StyledSearchIcon,
+  StyledShippingIcon,
+  StyledTechIcon,
+  StyledWarrantyIcon,
+} from '../muiStyles/ButtonAndIconStyles';
 function HomePage() {
   const [displayItems, setDisplayItems] = useState([]);
   const [haveItems, setHaveItems] = useState(false);
@@ -39,11 +45,12 @@ function HomePage() {
             return (
               <div key={itemIndex} className={styles.productPreview}>
                 <h4>{item.title}</h4>
+                <p className={styles.inStock}>In Stock</p>
                 <div className={styles.previewImageContainer}>
                   <img
                     onClick={() => {
-                      cartContext.setCurrentProduct(item)
-                      navigate(`/product/${item.id}`)
+                      cartContext.setCurrentProduct(item);
+                      navigate(`/product/${item.id}`);
                     }}
                     className={styles.previewImage}
                     src={item.images[0]}
@@ -53,6 +60,25 @@ function HomePage() {
               </div>
             );
           })}
+        </div>
+        <h2>Make sure to ask about</h2>
+        <div className={styles.purchaseDetails}>
+          <div className={styles.detailDiv}>
+            <StyledSearchIcon className={styles.detailIcon} />
+            <p className={styles.detailDescription}>55-point inspection</p>
+          </div>
+          <div className={styles.detailDiv}>
+            <StyledShippingIcon className={styles.detailIcon} />
+            <p className={styles.detailDescription}>FREE shipping</p>
+          </div>
+          <div className={styles.detailDiv}>
+            <StyledTechIcon className={styles.detailIcon} />
+            <p className={styles.detailDescription}>FREE tech support</p>
+          </div>
+          <div className={styles.detailDiv}>
+            <StyledWarrantyIcon className={styles.detailIcon} />
+            <p className={styles.detailDescription}>FREE 2-year warranty</p>
+          </div>
         </div>
       </main>
     )

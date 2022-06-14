@@ -13,7 +13,7 @@ function IndividualProductLinks() {
   const navigate = useNavigate();
 
   const pickDisplayItem = (arrayToSearch) => {
-    const randomNumber = Math.floor(Math.random() * arrayToSearch.length - 1);
+    const randomNumber = Math.abs(Math.floor(Math.random() * arrayToSearch.length - 1));
     return arrayToSearch[randomNumber];
   };
 

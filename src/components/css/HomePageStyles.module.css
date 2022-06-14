@@ -19,6 +19,7 @@
   font-family: sans-serif;
   margin: 20px auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -54,6 +55,7 @@
 }
 
 .purchaseDetails {
+  flex-wrap: wrap;
   width: 90%;
   display: flex;
   justify-content: space-around;

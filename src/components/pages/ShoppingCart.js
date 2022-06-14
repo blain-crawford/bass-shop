@@ -13,8 +13,7 @@ function ShoppingCart() {
   const chooseProduct = (productToView) => {
     for (let i = 0; i < allProducts.length; i++) {
       if (allProducts[i].id === productToView) {
-        // cartContext.setCurrentProduct(allProducts[i]);
-        console.log(allProducts[i])
+        cartContext.setCurrentProduct(allProducts[i]);
       }
     }
   };

@@ -23,15 +23,12 @@ function IndividualProductPage() {
   useEffect(() => {
     let productToSearch = location.pathname.split('/');
     productToSearch = productToSearch[productToSearch.length - 1];
-    console.log(productToSearch);
     let tempProductToDisplay = allProducts.filter(
       (product) => product.id === productToSearch,
     );
-    console.log(tempProductToDisplay[0]);
     cartContext.setCurrentProduct(tempProductToDisplay[0]);
     setSelectedBassPic(tempProductToDisplay[0].images[0]);
     setHasProduct(true);
-    console.log(StyledWarrantyIcon)
   }, []);
 
   const addToCart = (productToAdd) => {
@@ -39,7 +36,6 @@ function IndividualProductPage() {
       ...cartContext.currentCartContents,
       productToAdd,
     ]);
-    console.log(cartContext.currentCartContents);
   };
 
   useEffect(() => {

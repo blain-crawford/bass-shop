@@ -3,7 +3,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/themeContext';
-import styles from '../components/css/HeaderStyles.module.css';
+import styles from '../components/css/HeaderAndLinkStyles.module.css';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { StyledShoppingCart } from './muiStyles/ButtonAndIconStyles';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';

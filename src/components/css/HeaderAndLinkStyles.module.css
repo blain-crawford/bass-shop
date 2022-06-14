@@ -8,8 +8,15 @@
   color: white;
   display: flex;
   justify-content: center;
-  background: rgb(62,110,240);
-  background: linear-gradient(200deg, rgba(62,110,240,1) 0%, rgba(141,30,170,1) 49%, rgba(62,110,240,1) 100%);
+  background: rgb(62, 110, 240);
+  background: linear-gradient(
+    200deg,
+    rgba(62, 110, 240, 1) 0%,
+    rgba(141, 30, 170, 1) 49%,
+    rgba(62, 110, 240, 1) 100%
+  );
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 .shippingDetails {
@@ -19,7 +26,9 @@
   gap: 20px;
 }
 
-.shippingDetails, h1, h2 {
+.shippingDetails,
+h1,
+h2 {
   margin: 2px;
   padding: 5px;
 }
@@ -27,15 +36,19 @@
 .twoDay {
   margin: 5px;
   padding: 0 20px 0 20px;
-  border: 8px solid rgba(141,30,170,.8);
+  border: 8px solid rgba(141, 30, 170, 0.8);
   text-align: center;
   background-color: white;
-  color: rgba(141,30,170,1);
-  color: linear-gradient(200deg, rgba(62,110,240,1) 0%, rgba(141,30,170,1) 49%, rgba(62,110,240,1) 100%);
+  color: rgba(141, 30, 170, 1);
+  color: linear-gradient(
+    200deg,
+    rgba(62, 110, 240, 1) 0%,
+    rgba(141, 30, 170, 1) 49%,
+    rgba(62, 110, 240, 1) 100%
+  );
   transform: skew(-5deg, -5deg);
   display: inline-block;
 }
-
 
 .headerContainer {
   display: flex;
@@ -45,7 +58,7 @@
 
 .shopLogo {
   cursor: pointer;
-  -webkit-text-stroke: .25px black;
+  -webkit-text-stroke: 0.25px black;
   color: white;
   position: relative;
   left: 30px;
@@ -73,7 +86,7 @@
 
 .navBar {
   padding: 10px;
-  border: 1px solid rgb(0 , 0, 0, .2);
+  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .cartCount {
@@ -98,4 +111,46 @@
   color: black;
   text-decoration: none;
   font-size: 20px;
+  font-family: sans-serif;
+}
+
+.linkCardContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+}
+
+
+.linkCards {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.linkCards:hover {
+  color: blue;
+}
+
+.cardImageContainer {
+  width: 50%;
+}
+
+.cardImage:hover {
+  border-left: 5px solid rgb(62, 110, 240);
+  border-top: 5px solid rgba(141, 30, 170);
+  border-right: 5px solid rgb(62, 110, 240);
+  border-bottom: 5px solid rgba(141, 30, 170);
+  width: 85%;
+  position: static;
+} 
+
+.cardImage {
+  width: 90%;
+  border-radius: 100%;
+  object-fit: contain;
 }

@@ -6,16 +6,39 @@
   margin: 0 auto;
 }
 
-.pageTitle {
+.popularCategories {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.featuredProducts {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 50px;
+}
+
 .previewContainer {
-  margin: 40px auto;
+  font-family: sans-serif;
+  margin: 70px auto;
   display: flex;
   gap: 20px;
 }
 
+
+.previewImageContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.previewImage {
+  width: 90%;
+  object-fit: cover;
+}
+
 .productPreview {
-  border: 5px solid rgba(141,30,170,.8);
+  background-color: rgb(233, 230, 229, .4);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.productPreview:hover {
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
 }

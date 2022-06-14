@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useContext } from 'react';
-import Header from '../Header';
 import IndividualProductLinks from '../IndividualProductLinks';
 import allProducts from '../products/allProducts';
 import { ThemeContext } from '../../contexts/themeContext';
@@ -14,6 +13,7 @@ import {
   StyledAddButton,
 } from '../muiStyles/ButtonAndIconStyles';
 import { useLocation } from 'react-router';
+
 function IndividualProductPage() {
   const cartContext = useContext(ThemeContext);
   const location = useLocation();

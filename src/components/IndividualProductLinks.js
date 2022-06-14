@@ -25,14 +25,12 @@ function IndividualProductLinks() {
     haveImages && (
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <ul className={styles.linkCardContainer}>
-          <div
-            onClick={() => {
-              navigate('/all-products');
-            }}
-            className={styles.linkCards}
-          >
+          <div className={styles.linkCards}>
             <div className={styles.cardImageContainer}>
               <img
+                onClick={() => {
+                  navigate('/all-products');
+                }}
                 className={styles.cardImage}
                 alt='All Products'
                 src={allProductsImage}
@@ -42,14 +40,12 @@ function IndividualProductLinks() {
               All products
             </Link>
           </div>
-          <div
-            onClick={() => {
-              navigate('/basses');
-            }}
-            className={styles.linkCards}
-          >
+          <div className={styles.linkCards}>
             <div className={styles.cardImageContainer}>
               <img
+                onClick={() => {
+                  navigate('/basses');
+                }}
                 className={styles.cardImage}
                 alt='Basses'
                 src={basses[0].images[0]}
@@ -59,14 +55,12 @@ function IndividualProductLinks() {
               Basses
             </Link>
           </div>
-          <div
-            onClick={() => {
-              navigate('/amps');
-            }}
-            className={styles.linkCards}
-          >
+          <div className={styles.linkCards}>
             <div className={styles.cardImageContainer}>
               <img
+                onClick={() => {
+                  navigate('/amps');
+                }}
                 className={styles.cardImage}
                 alt='Bass Amps'
                 src={bassAmps[0].images[0]}
@@ -76,14 +70,12 @@ function IndividualProductLinks() {
               Amps
             </Link>
           </div>
-          <div
-            onClick={() => {
-              navigate('/pedals');
-            }}
-            className={styles.linkCards}
-          >
+          <div className={styles.linkCards}>
             <div className={styles.cardImageContainer}>
               <img
+                onClick={() => {
+                  navigate('/pedals');
+                }}
                 className={styles.cardImage}
                 alt='Bass Pedals'
                 src={bassPedals[0].images[0]}

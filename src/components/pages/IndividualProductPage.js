@@ -11,7 +11,7 @@ import {
   StyledSearchIcon,
   StyledShippingIcon,
   StyledWarrantyIcon,
-  StyledAddButton
+  StyledAddButton,
 } from '../muiStyles/ButtonAndIconStyles';
 import { useLocation } from 'react-router';
 function IndividualProductPage() {
@@ -45,7 +45,6 @@ function IndividualProductPage() {
   return (
     hasProduct && (
       <div>
-        <h2 className={styles.pageTitle}>{cartContext.currentProduct.title}</h2>
         <IndividualProductLinks />
         <main className={styles.bassPreviewContainer}>
           <div className={styles.bassPics}>

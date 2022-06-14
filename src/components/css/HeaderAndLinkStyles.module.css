@@ -124,7 +124,6 @@ h2 {
 
 
 .linkCards {
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +136,7 @@ h2 {
 }
 
 .cardImageContainer {
+  cursor: pointer;
   width: 50%;
 }
 
@@ -146,7 +146,6 @@ h2 {
   border-right: 5px solid rgb(62, 110, 240);
   border-bottom: 5px solid rgba(141, 30, 170);
   width: 85%;
-  position: static;
 } 
 
 .cardImage {

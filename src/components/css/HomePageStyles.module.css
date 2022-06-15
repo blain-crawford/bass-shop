@@ -64,24 +64,39 @@
 }
 
 .detailDiv {
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(233, 230, 229, .4);
+  border-left: 5px solid rgb(62, 110, 240);
+  border-top: 5px solid rgba(141, 30, 170);
+  border-right: 5px solid rgb(62, 110, 240);
+  border-bottom: 5px solid rgba(141, 30, 170);
   padding: 20px;
-  border-radius: 200px;
+  border-radius: 20px;
   margin: 20px;
 }
 
 .detailIcon {
-  font-size: 50px;
+  font-size: 60px !important;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, .4);
+  border-radius: 10px;
   margin: 0;
-  padding: 0;
+  padding: 15px;
+}
+
+.promise {
+  font-size: 20px;
 }
 
 .detailDescription {
-  margin: 0 0 50px 0;
+  font-size: 20px;
+  line-height: 0px;
+  margin: 0 0 60px 0;
   padding: 0;
 }
 
@@ -89,4 +104,10 @@
   .previewContainer {
     flex-wrap: wrap;
   }
+
+  .detailDescription {
+    font-size: 15px;
+  }
+
+  
 }

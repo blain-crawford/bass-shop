@@ -65,18 +65,22 @@ function HomePage() {
         <div className={styles.purchaseDetails}>
           <div className={styles.detailDiv}>
             <StyledSearchIcon className={styles.detailIcon} />
+            <h5 className={styles.promise}>Always the Highest Quality</h5>
             <p className={styles.detailDescription}>55-point inspection</p>
           </div>
           <div className={styles.detailDiv}>
             <StyledShippingIcon className={styles.detailIcon} />
-            <p className={styles.detailDescription}>FREE shipping</p>
+            <h5 className={styles.promise}>Always the Highest Quality</h5>
+            <p className={styles.detailDescription}>FREE 2-day shipping</p>
           </div>
           <div className={styles.detailDiv}>
             <StyledTechIcon className={styles.detailIcon} />
+            <h5 className={styles.promise}>Always the Highest Quality</h5>
             <p className={styles.detailDescription}>FREE tech support</p>
           </div>
           <div className={styles.detailDiv}>
             <StyledWarrantyIcon className={styles.detailIcon} />
+            <h5 className={styles.promise}>Always the Highest Quality</h5>
             <p className={styles.detailDescription}>FREE 2-year warranty</p>
           </div>
         </div>

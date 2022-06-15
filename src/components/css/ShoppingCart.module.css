@@ -29,6 +29,7 @@
 .productFullContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
@@ -52,6 +53,7 @@
 
 .productDetails {
   flex: 1;
+  font-family: sans-serif;
 }
 
 .productName {
@@ -84,4 +86,58 @@
   cursor: pointer;
   color: purple;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 820px) {
+  .shoppingCart {
+    width: 100%;
+  }
+  .shoppingCartHeader {
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+
+  .productImageContainer {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .productImage {
+    width: 60%;
+  }
+
+  .productDetails {
+    flex: 1;
+  }
+
+  .productName {
+    font-size: 10px;
+  }
+
+  .condition {
+    font-size: 10px;
+  }
+
+  .strings {
+    font-size: 10px;
+  }
+
+  .idAndPrice {
+    font-size: 10px;
+  }
+
+  .features {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+
+  .remove {
+    font-size: 10px;
+  }
+
 }

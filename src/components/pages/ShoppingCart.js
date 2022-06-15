@@ -72,7 +72,7 @@ function ShoppingCart() {
                 <p className={styles.condition}>
                   Condition: {product.condition}
                 </p>
-                <p>{product.strings ? `Strings: ${product.strings}` : ''}</p>
+                <p className={styles.strings}>{product.strings ? `Strings: ${product.strings}` : ''}</p>
                 <div className={styles.idAndPrice}>
                   <p style={{ margin: '0', padding: '0' }}>
                     ItemID: {product.id}

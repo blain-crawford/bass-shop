@@ -120,6 +120,20 @@
     flex-wrap: wrap;
   }
 
+  .popularCategories {
+    font-size: 20px;
+  }
 
+  .featuredProducts {
+    font-size: 20px;
+  }
+
+  .askAbout {
+    font-size: 20px;
+  }
+
+  .remove {
+    font-size: 10px;
+  }
   
 }

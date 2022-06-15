@@ -31,8 +31,8 @@ function ProductPage() {
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>All Available Products</h1>
       <IndividualProductLinks />
+      <h1 className={styles.pageTitle}>All Available Products</h1>
       <main className={styles.cardContainer}>
         {allProducts.map((product, productIndex) => {
           return (

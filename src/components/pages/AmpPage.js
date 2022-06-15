@@ -33,8 +33,8 @@ function AmpPage() {
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>Bass Amps in Stock</h1>
       <IndividualProductLinks />
+      <h1 className={styles.pageTitle}>Bass Amps in Stock</h1>
       <div className={styles.cardContainer}>
         {bassAmps.map((amp, ampIndex) => {
           return (

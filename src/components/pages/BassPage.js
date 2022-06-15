@@ -33,8 +33,8 @@ function BassPage() {
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>Basses In Stock</h1>
       <IndividualProductLinks />
+      <h1 className={styles.pageTitle}>Basses In Stock</h1>
       <div className={styles.cardContainer}>
         {basses.map((bass, bassIndex) => {
           return (

@@ -13,6 +13,7 @@ import {
   StyledAddButton,
 } from '../muiStyles/ButtonAndIconStyles';
 import { useLocation } from 'react-router';
+import { css } from '@emotion/react'
 
 function IndividualProductPage() {
   const cartContext = useContext(ThemeContext);
@@ -71,8 +72,8 @@ function IndividualProductPage() {
           </div>
           <div className={styles.productInteractions}>
             <div className={styles.interactionDivPrice}>
-              <h2>{cartContext.currentProduct.title}</h2>
-              <h3>Condition: {cartContext.currentProduct.condition}</h3>
+              <h2 className={styles.productTitle}>{cartContext.currentProduct.title}</h2>
+              <h3 className={styles.productCondition}>Condition: {cartContext.currentProduct.condition}</h3>
               <h1 className={styles.price}>
                 {cartContext.currentProduct.pricing.display}{' '}
                 {cartContext.currentProduct.pricing.currency}

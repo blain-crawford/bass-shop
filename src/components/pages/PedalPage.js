@@ -34,8 +34,8 @@ function PedalPage() {
 
   return (
     <div>
-      <h1 className={styles.pageTitle}>Pedals in Stock</h1>
       <IndividualProductLinks />
+      <h1 className={styles.pageTitle}>Pedals in Stock</h1>
       <div className={styles.cardContainer}>
         {bassPedals.map((pedal, pedalIndex) => {
           return (

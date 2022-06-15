@@ -30,7 +30,7 @@ function Header() {
         <div className={styles.cartDisplay}>
           <p className={styles.cartCount}>{cartContext.cartCount}</p>
           <Link to='/cart'>
-            <StyledShoppingCart className='shopping-cart' />
+            <StyledShoppingCart className={styles.shoppingCart} />
           </Link>
         </div>
       </div>

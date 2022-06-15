@@ -11,6 +11,10 @@ import {
   StyledTechIcon,
   StyledWarrantyIcon,
 } from '../muiStyles/ButtonAndIconStyles';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import '../css/carousel.css';
+import { carouselImages } from '../products/carouselImages';
 function HomePage() {
   const [displayItems, setDisplayItems] = useState([]);
   const [haveItems, setHaveItems] = useState(false);
@@ -39,6 +43,17 @@ function HomePage() {
       <main className={styles.mainPageContainer}>
         <h1 className={styles.popularCategories}>Popular Categories</h1>
         <IndividualProductLinks />
+        <div className={styles.carouselContainer}>
+          <Carousel width={'100%'}showThumbs={false} autoPlay infiniteLoop stopOnHover>
+            {carouselImages.map((image, imageIndex) => {
+              return (
+                <div key={imageIndex}>
+                  <img className={styles.carouselImage} src={image.src} alt={image.title} />
+                </div>
+              );
+            })}
+          </Carousel>
+        </div>
         <h2 className={styles.featuredProducts}>Featured Products</h2>
         <div className={styles.previewContainer}>
           {displayItems.map((item, itemIndex) => {

@@ -11,6 +11,7 @@
 }
 
 .featuredProducts {
+  font-size: 60px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 50px;
 }
@@ -53,6 +54,11 @@
   font-weight: bolder;
 }
 
+.askAbout {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
 .purchaseDetails {
   flex-wrap: wrap;
   width: 90%;
@@ -60,12 +66,10 @@
   justify-content: space-around;
   align-items: center;
   gap: 40px;
-  margin: 0 auto;
+  margin: 050px auto;
 }
 
 .detailDiv {
-  width: 200px;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,39 +79,47 @@
   border-top: 5px solid rgba(141, 30, 170);
   border-right: 5px solid rgb(62, 110, 240);
   border-bottom: 5px solid rgba(141, 30, 170);
-  padding: 20px;
+  padding: 0 5px 50px 5px;
   border-radius: 20px;
   margin: 20px;
 }
 
 .detailIcon {
+  position: relative;
+  bottom: 40px;
   font-size: 60px !important;
   background-color: white;
   border: 1px solid rgb(0, 0, 0, .4);
-  border-radius: 10px;
-  margin: 0;
-  padding: 15px;
+  border-radius: 100px;
+  margin: 0 !important;
+  padding: 15px !important;
 }
 
 .promise {
-  font-size: 20px;
+  width: 75%;
+  font-size: 25px;
+  color: rgb(62, 110, 240);
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 .detailDescription {
   font-size: 20px;
-  line-height: 0px;
-  margin: 0 0 60px 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 @media only screen and (max-width: 820px) {
+  .purchaseDetails { 
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  
   .previewContainer {
     flex-wrap: wrap;
   }
 
-  .detailDescription {
-    font-size: 15px;
-  }
 
   
 }

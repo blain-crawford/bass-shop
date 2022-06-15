@@ -61,7 +61,7 @@ function HomePage() {
             );
           })}
         </div>
-        <h2>Make sure to ask about</h2>
+        <h2 className={styles.askAbout}>Make sure to ask about</h2>
         <div className={styles.purchaseDetails}>
           <div className={styles.detailDiv}>
             <StyledSearchIcon className={styles.detailIcon} />
@@ -70,17 +70,17 @@ function HomePage() {
           </div>
           <div className={styles.detailDiv}>
             <StyledShippingIcon className={styles.detailIcon} />
-            <h5 className={styles.promise}>Always the Highest Quality</h5>
+            <h5 className={styles.promise}>Always the Fastest Shipping</h5>
             <p className={styles.detailDescription}>FREE 2-day shipping</p>
           </div>
           <div className={styles.detailDiv}>
             <StyledTechIcon className={styles.detailIcon} />
-            <h5 className={styles.promise}>Always the Highest Quality</h5>
+            <h5 className={styles.promise}>the Best Customer Support</h5>
             <p className={styles.detailDescription}>FREE tech support</p>
           </div>
           <div className={styles.detailDiv}>
             <StyledWarrantyIcon className={styles.detailIcon} />
-            <h5 className={styles.promise}>Always the Highest Quality</h5>
+            <h5 className={styles.promise}>Always the Most Coverage</h5>
             <p className={styles.detailDescription}>FREE 2-year warranty</p>
           </div>
         </div>

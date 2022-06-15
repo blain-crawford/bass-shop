@@ -87,6 +87,7 @@ h2 {
 .navBar {
   padding: 10px;
   border: 1px solid rgb(0, 0, 0, 0.2);
+  background-color: rgb(233, 230, 229, .4);
 }
 
 .cartCount {

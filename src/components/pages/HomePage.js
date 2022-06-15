@@ -44,6 +44,7 @@ function HomePage() {
         <h1 className={styles.popularCategories}>Popular Categories</h1>
         <IndividualProductLinks />
         <div className={styles.carouselContainer}>
+          <h2 className={styles.featuredProducts}>Selling popular brands such as</h2>
           <Carousel width={'100%'}showThumbs={false} autoPlay infiniteLoop stopOnHover>
             {carouselImages.map((image, imageIndex) => {
               return (

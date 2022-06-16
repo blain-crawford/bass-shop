@@ -15,6 +15,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import '../css/carousel.css';
 import { carouselImages } from '../products/carouselImages';
+
 function HomePage() {
   const [displayItems, setDisplayItems] = useState([]);
   const [haveItems, setHaveItems] = useState(false);
@@ -44,12 +45,30 @@ function HomePage() {
         <h1 className={styles.popularCategories}>Popular Categories</h1>
         <IndividualProductLinks />
         <div className={styles.carouselContainer}>
-          <h2 className={styles.featuredProducts}>Selling popular brands such as</h2>
-          <Carousel width={'100%'}showThumbs={false} autoPlay infiniteLoop stopOnHover>
+          <h2 className={styles.featuredProducts}>
+            Selling popular brands such as
+          </h2>
+          <Carousel
+            width={'100%'}
+            showThumbs={false}
+            autoPlay
+            infiniteLoop
+            stopOnHover
+          >
             {carouselImages.map((image, imageIndex) => {
               return (
-                <div key={imageIndex}>
-                  <img className={styles.carouselImage} src={image.src} alt={image.title} />
+                <div
+                  className={styles.carouselImageContainer}
+                  onClick={() => {
+                    navigate(image.link);
+                  }}
+                  key={imageIndex}
+                >
+                  <img
+                    className={styles.carouselImage}
+                    src={image.src}
+                    alt={image.title}
+                  />
                 </div>
               );
             })}

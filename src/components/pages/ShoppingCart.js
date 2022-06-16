@@ -40,7 +40,7 @@ function ShoppingCart() {
   return (
     <div className={styles.shoppingCart}>
       <div className={styles.shoppingCartHeader}>
-        <ShoppingCartOutlined className={styles.cartIcon}/>
+        <ShoppingCartOutlined className={styles.cartIcon} />
         <h2>Shopping Cart</h2>
       </div>
       <div className={styles.cartContents}>
@@ -72,7 +72,9 @@ function ShoppingCart() {
                 <p className={styles.condition}>
                   Condition: {product.condition}
                 </p>
-                <p className={styles.strings}>{product.strings ? `Strings: ${product.strings}` : ''}</p>
+                <p className={styles.strings}>
+                  {product.strings ? `Strings: ${product.strings}` : ''}
+                </p>
                 <div className={styles.idAndPrice}>
                   <p style={{ margin: '0', padding: '0' }}>
                     ItemID: {product.id}

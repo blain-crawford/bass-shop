@@ -1,11 +1,11 @@
-.pageTitle{
+.pageTitle {
   margin: 0 auto;
   text-align: center;
 }
 
 .bassPreviewContainer {
   display: flex;
-  border: 1px solid rgb(0, 0, 0, .2);
+  border: 1px solid rgb(0, 0, 0, 0.2);
   padding: 50px;
 }
 
@@ -50,7 +50,7 @@
   width: 80%;
   margin: 0 auto;
   padding: 0;
-  border-bottom: 1px solid rgb(0, 0, 0, .4);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.4);
 }
 
 .interactionDivButton {
@@ -130,7 +130,7 @@
     margin: 0 auto;
   }
   .productTitle {
-    font-size:20px;
+    font-size: 20px;
     text-align: center;
   }
 

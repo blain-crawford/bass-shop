@@ -28,8 +28,8 @@ function BassPage() {
   };
 
   useEffect(() => {
-    cartContext.setCartCount(cartContext.currentCartContents.length)
-  }, [cartContext.currentCartContents])
+    cartContext.setCartCount(cartContext.currentCartContents.length);
+  }, [cartContext.currentCartContents]);
 
   return (
     <div>

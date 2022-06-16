@@ -87,7 +87,7 @@ h2 {
 .navBar {
   padding: 10px;
   border: 1px solid rgb(0, 0, 0, 0.2);
-  background-color: rgb(233, 230, 229, .4);
+  background-color: rgb(233, 230, 229, 0.4);
 }
 
 .cartCount {
@@ -124,7 +124,6 @@ h2 {
   padding: 10px;
 }
 
-
 .linkCards {
   display: flex;
   flex-direction: column;
@@ -143,12 +142,13 @@ h2 {
 }
 
 .cardImage:hover {
-  border-left: 5px solid rgb(62, 110, 240);
+  /* border-left: 5px solid rgb(62, 110, 240);
   border-top: 5px solid rgba(141, 30, 170);
   border-right: 5px solid rgb(62, 110, 240);
-  border-bottom: 5px solid rgba(141, 30, 170);
+  border-bottom: 5px solid rgba(141, 30, 170); */
+  outline: 5px solid rgb(62, 110, 240);
   width: 85%;
-} 
+}
 
 .cardImage {
   width: 90%;
@@ -165,13 +165,13 @@ h2 {
     justify-content: space-between;
   }
 
-
   .twoDay {
     border: 5px solid rgba(141, 30, 170, 0.8);
     padding: 0 2px 0 2px;
   }
 
-  .shippingBanner, h1 {
+  .shippingBanner,
+  h1 {
     height: 100%;
     border-right: 1px solid white;
   }

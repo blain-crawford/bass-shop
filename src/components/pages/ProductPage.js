@@ -5,7 +5,7 @@ import IndividualProductLinks from '../IndividualProductLinks';
 import allProducts from '../products/allProducts';
 import styles from '../css/ProductPage.module.css';
 import { ThemeContext } from '../../contexts/themeContext';
-import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles'
+import { StyledAddButton } from '../muiStyles/ButtonAndIconStyles';
 function ProductPage() {
   const navigate = useNavigate();
   const cartContext = useContext(ThemeContext);

@@ -52,7 +52,7 @@ export const StyledAddButton = styled(Button, {
 });
 
 export const StyledShoppingCart = styled(ShoppingCartOutlinedIcon, {
-  name: 'StyledShoppingCart'
+  name: 'StyledShoppingCart',
 })({
   color: 'black',
   fontSize: '70px',

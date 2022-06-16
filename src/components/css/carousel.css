@@ -17,7 +17,8 @@
   margin: 40px;
 }
 
-.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
   background-color: rgb(0, 0, 0, 0) !important;
 }
 
@@ -69,7 +70,7 @@
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
-  
+
   .carousel .control-prev.control-arrow:before {
     content: '';
     border: solid white;

@@ -1,9 +1,7 @@
 .footer {
   position: relative;
-  margin-top: 100px;
   display: flex;
   bottom: 0;
-  padding: 20px;
   background-color: rgb(233, 230, 229, 0.4);
 }
 
@@ -27,28 +25,29 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding-bottom: 40px;
 }
 
 .linkContainer1 {
-  width: 49%;
+  width: 40%;
 }
 
 .linkContainer2 {
-  width: 49%;
+  width: 40%;
 }
 
 .linkContainer3 {
-  width: 49%;
+  width: 40%;
 }
 
 .linkContainer4 {
-  width: 49%;
+  width: 40%;
 }
 
 .listHeader {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
 
@@ -58,6 +57,8 @@ ul {
 
 li {
   list-style: none;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 820px) {
@@ -69,13 +70,18 @@ li {
 
   .contactInfo {
     display: flex;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     padding: 5px;
   }
 
+  .devImageContainer {
+    align-items: flex-start;
+  }
+
   .devImage {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
   }
 
@@ -87,13 +93,11 @@ li {
     font-size: 5px;
     padding: 0;
     margin: 0;
-    /* width: 30%; */
   }
 
   .devIntro {
     font-size: 5px;
-    margin: 0;
-    width: 60%;
+    margin-top: 10px;
   }
 
   .website {
@@ -104,8 +108,10 @@ li {
 
   .ghLink {
     padding: 0;
-    margin: 0;
+    margin: 2px;
     font-size: 5px;
+    display: flex;
+    
   }
 
   .footerLinks {
@@ -120,7 +126,7 @@ li {
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
-    padding: 5px !important;
+    padding: 0px 0px 0px 10px !important;
   }
   
   .linkContainer1 {
@@ -155,5 +161,7 @@ li {
   li {
     list-style: none;
     font-size: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
   }
 }

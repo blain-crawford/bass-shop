@@ -7,6 +7,9 @@ import styles from '../components/css/HeaderAndLinkStyles.module.css';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { StyledShoppingCart } from './muiStyles/ButtonAndIconStyles';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
+
+
+
 function Header() {
   const cartContext = useContext(ThemeContext);
   const navigate = useNavigate()

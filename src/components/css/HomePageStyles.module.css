@@ -58,6 +58,7 @@
   background-color: rgb(233, 230, 229, 0.4);
   padding: 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .productPreview:hover {

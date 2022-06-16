@@ -39,9 +39,13 @@ function Header() {
       </div>
       <div className={styles.navBar}>
         <ul className={styles.links}>
+        <div className={styles.spacerDiv}></div>
           <Link className={styles.link} to='/'>Home</Link>
+          <div className={styles.spacerDiv}></div>
           <Link className={styles.link} to='/all-products'>Products</Link>
+          <div className={styles.spacerDiv}></div>
           <Link className={styles.link} to='/cart'>Shopping Cart</Link>
+          <div className={styles.spacerDiv}></div>
         </ul>
       </div>
     </header>

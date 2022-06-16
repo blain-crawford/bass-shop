@@ -31,7 +31,6 @@ function HomePage() {
       tempItemArray.push(arrayToSearch[randomNumber]);
     }
     setDisplayItems(tempItemArray);
-    console.log(tempItemArray);
   };
 
   useEffect(() => {

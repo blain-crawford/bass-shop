@@ -138,12 +138,14 @@
   }
 
   .purchaseDetails {
+    gap: 0;
     flex-wrap: wrap;
     width: 100%;
   }
 
   .previewContainer {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .popularCategories {
@@ -163,35 +165,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: none;
     background-color: rgb(0, 0, 0, 0);
-    padding: 0 5px 50px 5px;
+    border: none;
+    padding: 0 0px 0px 0px !important;
     border-radius: 20px;
-    margin: 20px;
+    margin: 40px 0 0 0 !important;
   }
   
   .detailIcon {
     position: relative;
-    bottom: 40px;
-    font-size: 60px !important;
+    bottom: 0px;
+    font-size: 40px !important;
     background-color: white;
     border: 1px solid rgb(0, 0, 0, 0.4);
     border-radius: 100px;
     margin: 0 !important;
-    padding: 15px !important;
+    padding: 5px !important;
   }
   
   .promise {
     width: 75%;
-    font-size: 25px;
+    font-size: 15px;
     color: rgb(62, 110, 240);
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
     padding: 0;
   }
   
   .detailDescription {
-    font-size: 20px;
-    margin: 0 auto;
+    width: 75%;
+    font-size: 15px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .detailIcon {
+    font-size: 30px !important;
+  }
+
+  .promise {
+    width: 75%;
+    font-size: 10px;
+    color: rgb(62, 110, 240);
+    margin: 0 0 0 0;
     padding: 0;
+  }
+  
+  .detailDescription {
+    width: 75%;
+    font-size: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }

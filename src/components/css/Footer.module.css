@@ -1,3 +1,157 @@
 .footer {
+  display: flex;
+  bottom: 0;
+  padding: 20px;
   background-color: rgb(233, 230, 229, 0.4);
+}
+
+.contactInfo {
+  text-align: center;
+  padding: 40px;
+}
+.devImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devImage {
+  border-radius: 100px;
+}
+
+.footerLinks {
+  flex: 1;
+  border-left: 1px solid rgb(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.linkContainer1 {
+  width: 49%;
+}
+
+.linkContainer2 {
+  width: 49%;
+}
+
+.linkContainer3 {
+  width: 49%;
+}
+
+.linkContainer4 {
+  width: 49%;
+}
+
+.listHeader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+ul {
+  padding-left: 0px !important;
+}
+
+li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 820px) {
+  .footer {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(233, 230, 229, 0.4);
+  }
+
+  .contactInfo {
+    display: flex;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .devImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+  }
+
+  .devDetails {
+    padding: 5px;
+  }
+
+  .devQuestion {
+    font-size: 5px;
+    padding: 0;
+    margin: 0;
+    /* width: 30%; */
+  }
+
+  .devIntro {
+    font-size: 5px;
+    margin: 0;
+    width: 60%;
+  }
+
+  .website {
+    padding: 0;
+    margin: 0;
+    font-size: 5px;
+  }
+
+  .ghLink {
+    padding: 0;
+    margin: 0;
+    font-size: 5px;
+  }
+
+  .footerLinks {
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+  }
+
+  .footerLinks {
+    flex: 1;
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px !important;
+  }
+  
+  .linkContainer1 {
+    width: 24%;
+    padding: 0 !important;
+    margin: 0;
+  }
+  
+  .linkContainer2 {
+    width: 24%;
+    padding: 0 !important;
+    margin: 0;
+  }
+  
+  .linkContainer3 {
+    width: 24%;
+    padding: 0 !important;
+    margin: 0;
+  }
+  
+  .linkContainer4 {
+    width: 24%;
+    padding: 0 !important;
+    margin: 0;
+  }
+  
+  .listHeader {
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 5px;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import BassPage from './pages/BassPage';
@@ -30,7 +31,9 @@ function App() {
           <Route path='/pedals' element={<PedalPage />} />
           <Route path='/product/:id' element={<IndividualProductPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
+      
     </div>
   );
 }

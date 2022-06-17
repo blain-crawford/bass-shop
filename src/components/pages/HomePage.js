@@ -5,7 +5,6 @@ import styles from '../css/HomePageStyles.module.css';
 import IndividualProductLinks from '../IndividualProductLinks';
 import { ThemeContext } from '../../contexts/themeContext';
 import {
-  StyledAddButton,
   StyledSearchIcon,
   StyledShippingIcon,
   StyledTechIcon,
@@ -43,7 +42,7 @@ function HomePage() {
       <main className={styles.mainPageContainer}>
         <h1 className={styles.popularCategories}>Popular Categories</h1>
         <IndividualProductLinks />
-        <div className={styles.carouselContainer}>
+        <div data-testid="carousel" className={styles.carouselContainer}>
           <h2 className={styles.featuredProducts}>
             Selling popular brands such as
           </h2>
@@ -74,7 +73,7 @@ function HomePage() {
           </Carousel>
         </div>
         <h2 className={styles.featuredProducts}>Featured Products</h2>
-        <div className={styles.previewContainer}>
+        <div data-testid="preview-container" className={styles.previewContainer}>
           {displayItems.map((item, itemIndex) => {
             return (
               <div key={itemIndex} className={styles.productPreview}>

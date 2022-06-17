@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.contactInfo}>
-        <div class={styles.devImageContainer}>
+        <div className={styles.devImageContainer}>
           <img
             className={styles.devImage}
             alt='Blain Crawford'

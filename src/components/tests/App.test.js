@@ -4,9 +4,11 @@ import App from '../App';
 import HomePage from '../pages/HomePage';
 import ProductPage from '../pages/ProductPage';
 import IndividualProductPage from '../pages/IndividualProductPage';
+import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 describe('HomePage Component', () => {
+  // let currentCartContents;
   // it('renders correct heading', () => {
   //   render(<HomePage />);
   //   expect(screen.getByRole('heading').textContent).toMatch(
@@ -24,19 +26,26 @@ describe('HomePage Component', () => {
     render(
       <BrowserRouter>
         <HomePage />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
-    expect(
-      screen.getByText(/Popular Categories/i).textContent
-    ).toMatch(/Popular Categories/i);
+    expect(screen.getByText(/Popular Categories/i).textContent).toMatch(
+      /Popular Categories/i,
+    );
   });
 
-  it("adds item to cart", () => {
-    const currentCartContents = jest.fn()
+  it('adds item to cart', () => {
+    let currentCartContents = [];
+    // currentCartContents.setProps([{ blue: 'color' }]);
     render(
-    <BrowserRouter>
-      <IndividualProductPage currentCartContents={currentCartContents} />
-    </BrowserRouter>
-    )
-  })
+      <BrowserRouter>
+        <IndividualProductPage />
+      </BrowserRouter>,
+    );
+    const addButton = document.querySelector('.addButton');
+    const cartCount = document.querySelector('.cartCount');
+    userEvent.click(addButton);
+  
+    expect(cartCount.textContent).toMatch(/1/i);
+  });
+
 });

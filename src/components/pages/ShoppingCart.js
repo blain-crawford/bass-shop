@@ -20,11 +20,7 @@ function ShoppingCart() {
 
   const removeFromCart = (productToRemove) => {
     const newCart = [...cartContext.currentCartContents];
-    for (let i = 0; i < newCart.length; i++) {
-      if (newCart[i].id === productToRemove) {
-        newCart.splice(newCart.indexOf(newCart[i]), 1);
-      }
-    }
+    newCart.splice(productToRemove, 1);
     cartContext.setCurrentCartContents(newCart);
   };
 
@@ -103,7 +99,7 @@ function ShoppingCart() {
                 </div>
                 <p
                   onClick={() => {
-                    removeFromCart(product.id);
+                    removeFromCart(productIndex);
                   }}
                   className={styles.remove}
                 >

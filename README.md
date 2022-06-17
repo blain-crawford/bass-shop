@@ -4,7 +4,7 @@
 
 - Blain Crawford
 
-A template website for a shop selling bass guitar gear
+A template website for an online-shop selling bass guitar gear
 
 ## Deployed at:
 https://bass-shop.netlify.app/

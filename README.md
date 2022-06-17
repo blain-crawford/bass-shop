@@ -7,6 +7,7 @@
 A template website for a shop selling bass guitar gear
 
 ## Deployed at:
+https://bass-shop.netlify.app/
 
 This project is a part of <a href="http://www.theodinproject.com">The Odin Project</a> curriculum.
 
